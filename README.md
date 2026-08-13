@@ -1,30 +1,25 @@
-# ODADAKİ ŞEY
+[README.md](https://github.com/user-attachments/files/31041977/README.md)
+# ODADAKİ ŞEY — Playable Opening v1
 
-Mini hikâyeli, interaktif pixel horror oyunu.
+Cozy pixel-horror interactive room prototype.
 
-## Teknoloji
-- Godot 4.x
-- 960×540 viewport
-- Nearest-neighbor pixel rendering
-- Tek odalı başlangıç prototipi
+## Controls
+- WASD / Arrow Keys: move
+- E: interact / advance dialogue
+- Tab: inventory message
+- Esc: restart
 
-## Oynanış
-Oyuncu odadaki nesneleri inceler. Seçimler ve etkileşimler `flags` üzerinden takip edilir ve final değişir.
+## Opening loop
+03:13 → wake → note → explore room → inspect four locations → return to bed → room changes → first branch → ending prototype.
 
-## İlk prototipteki sonlar
-1. Cam
-2. Yatağın Altında
-3. Dolap
-4. Uyku
+## Art pipeline
+The current playable room uses procedural pixel-block art so the game is immediately runnable.
+`assets/reference/opening_room_reference.png` is the visual target for the production room.
 
-## Çalıştırma
-Godot 4 ile `project.godot` dosyasını aç ve Play'e bas.
+The next pass should replace the procedural shapes with the GitHub asset folders:
+- `assets/characters/`
+- `assets/bunny/`
+- `assets/environment/`
+- `assets/props/`
 
-## Sonraki geliştirmeler
-- Gerçek pixel-art oda ve karakter sprite'ları
-- Animasyonlu tavşan
-- Envanter / not sistemi
-- Diyalog kutuları
-- Ses efektleri ve ambience
-- Daha fazla seçim ve 8+ farklı son
-- Save/load
+Do not delete the procedural drawing until all collision and interaction anchors have been transferred to the real sprites.
